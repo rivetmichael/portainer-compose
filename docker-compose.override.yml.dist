@@ -1,0 +1,13 @@
+version: '2'
+
+services:
+  # Ensure containers always restart on host startup
+  
+  templates:
+    restart: unless-stopped
+
+  portainer:
+    restart: unless-stopped
+
+  watchtower:
+    restart: unless-stopped
